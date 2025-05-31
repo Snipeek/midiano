@@ -10,6 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  base: '/midiano/',
   build: {
     outDir: 'docs', // Указываем папку для сборки
   },
