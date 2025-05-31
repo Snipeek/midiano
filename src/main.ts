@@ -7,10 +7,12 @@ window.addEventListener('click', () => start());
 
 const synth = new PolySynth(Synth).toDestination();
 
+const instrument = 'acoustic_bass-mp3'; //acoustic_grand_piano-mp3
+
 const piano = new Sampler({
   urls: notes(),
   release: 1,
-  baseUrl: "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/acoustic_grand_piano-mp3/",
+  baseUrl: `https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/${instrument}/`,
   onload: () => {
     console.log("Sampler ready!", piano);
   }
