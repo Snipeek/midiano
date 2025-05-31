@@ -1,0 +1,27 @@
+{
+  "name": "labyrinth",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@tonaljs/tonal": "^4.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tone": "15.1.22",
+    "webmidi": "^3.1.12"
+  }
+}
