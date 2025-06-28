@@ -1,5 +1,5 @@
 import { WebMidi } from 'webmidi';
-import { PolySynth, Reverb, Synth, Analyser, Sampler, start, context } from 'tone';
+import { PolySynth, Reverb, Synth, Analyser, Sampler, start, Destination, context } from 'tone';
 import {getEnharmonicNote} from '@/enharmonic';
 import { notes } from './notes';
 // import {setupAnalyser} from '@/sphere';

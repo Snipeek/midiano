@@ -1,4 +1,6 @@
 import { GUI } from 'dat.gui';
+import { addRecord } from './record';
+import { setupCameraStream } from './video';
 
 // Настройка GUI
 const gui = new GUI();
@@ -72,6 +74,9 @@ export const initGui = (def = {}, onUpdate = () => {}) => {
 
     const bpmFolder = gui.addFolder('BPM Monitor');
     bpmFolder.add(config, 'currentBPM').name('Current BPM').listen().domElement.querySelector('input').disabled = true;
+
+    addRecord(gui);
+    setupCameraStream(gui);
 
     return config;
 }
